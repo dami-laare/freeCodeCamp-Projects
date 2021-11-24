@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Customer Satisfaction Survey</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Customer Satisfaction Survey Form</h1>
+      <p id="description">
+        We're glad you decided to work with us. Please fill this form so we can
+        know how well we served you and how we can improve our services here at
+        NeXus
+      </p>
+      <form id="survey-form">
+        <div class="form-elem-container">
+          <label for="name" id="name-label">Full Name</label>
+          <input
+            class="form-control form-control-field"
+            type="text"
+            id="name"
+            placeholder="Luke Skywalker"
+            required
+          />
+        </div>
+        <div class="form-elem-container">
+          <label for="email" id="email-label">E-mail</label>
+          <input
+            class="form-control form-control-field"
+            type="email"
+            id="email"
+            placeholder="lukesky@walker.com"
+            required
+          />
+        </div>
+        <div class="form-elem-container">
+          <label for="number" id="number-label">Age (Optional)</label>
+          <input
+            class="form-control form-control-field"
+            type="number"
+            id="number"
+            placeholder="20"
+            min="0"
+            max="100"
+          />
+        </div>
+        <div class="form-elem-container">
+          <label for="dropdown" id="dropdown-label"
+            >Which of our services did you opt for?</label
+          >
+          <select name="products" id="dropdown" class="form-control form-control-field">
+            <option value="penetration testing">Penetration Testing</option>
+            <option value="web design and development services">
+              Web Design and Development Services
+            </option>
+            <option value="database management">Database Management</option>
+          </select>
+        </div>
+        <div id="radios" class="form-elem-container">
+          <p>Were you satisfied with our services</p>
+          <ul style="list-style: none;">
+              <li>
+                  <input
+                  id="choice-1"
+                  class="form-control"
+                  type="radio"
+                  value="yes"
+                  name="satisfaction-choice"
+                  />
+                  <label for="choice-1">Yes</label>
+              </li>
+              <li>  
+                  <input
+                  id="choice-2"
+                  class="form-control"
+                  type="radio"
+                  value="no"
+                  name="satisfaction-choice"
+                  />
+                  <label for="choice-2">No</label>
+              </li>
+          </ul>
+          
+         
+        </div>
+        <div id="checkboxes" class="form-elem-container">
+          <p>What would you like to see improved?</p>
+          <ul style="list-style: none;">
+            <li>
+                <input
+                id="first-choice"
+                class="form-control"
+                type="checkbox"
+                value="yes"
+                name="recommendation"
+                />
+                <label for="first-choice">Penetration Testing Services</label>
+            </li>
+            <li>
+                <input
+                id="second-choice"
+                class="form-control"
+                type="checkbox"
+                value="no"
+                name="recommendation"
+                />
+                <label for="second-choice">Web Design and Development Services</label>
+            </li>
+            <li>
+                <input
+                id="third-choice"
+                class="form-control"
+                type="checkbox"
+                value="no"
+                name="recommendation"
+                />
+                <label for="third-choice">Data Management Services</label>
+            </li>
+            <li>
+                <input
+                id="fourth-choice"
+                class="form-control"
+                type="checkbox"
+                value="no"
+                name="recommendation"
+                />
+                <label for="fourth-choice">Customer Care</label>
+            </li>
+          </ul>
+        </div>
+        <div id="text-area" class="form-elem-container">
+          <label for="suggestion-box"
+            >Please give us you honest thoughts on how we can serve you and our
+            other clients better!!</label
+          >
+          <textarea
+            name="suggestions"
+            id="suggestion-box"
+            cols="20"
+            rows="5"
+          ></textarea>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

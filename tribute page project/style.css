@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    top: 0;
+    width: 100%;
+    height: fit-content;
+}
+#img-caption {
+    position: absolute;
+    left: -4000px;
+}
+
+#title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.8rem;
+    color: white;
+    z-index: 100;
+    padding: 5px;
+}
+
+#img-div {
+    top: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+#image {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: auto;
+}
+
+#tribute-info {
+    z-index: 100;
+    color: black;
+    width: 80%;
+    font-size: 1.2rem;
+    top: 235px;
+    left: 90px;
+    padding: 1.8rem 0.5rem;
+    margin: auto;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+    transition: 200ms;
+}
+
+a:hover {
+    font-size: 1.2em;
+}
+
+
+
+
+
+@media (min-width: 720px) {
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    #main {
+        top: 0;
+        width: 100%;
+        height: fit-content;
+    }
+    #img-caption {
+        position: absolute;
+        left: -4000px;
+    }
+    
+    #title {
+        position: absolute;
+        top: 170px;
+        left: -135px;
+        font-size: 3rem;
+        color: white;
+        z-index: 100;
+        transform: rotate(270deg);
+    }
+    
+    #img-div {
+        top: 0;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    #image {
+        width: 100%;
+        max-width: 1920px;
+        height: auto;
+        margin: auto;
+    }
+    
+    #tribute-info {
+        z-index: 100;
+        color: black;
+        width: 80%;
+        font-size: 1.2rem;
+        top: 235px;
+        left: 90px;
+        padding: 1.8rem 0.5rem;
+        margin: auto;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: inherit;
+        transition: 200ms;
+    }
+    
+    a:hover {
+        font-size: 1.2em;
+    }
+    
+    
+    
+    
+}
+@media (min-width: 1100px) {
+    * {
+        margin: 0;
+    }
+    
+    #main {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #title {
+        position: absolute;
+        top: 170px;
+        left: 90px;
+        font-size: 3rem;
+        color: white;
+        z-index: 100;
+        transform: rotate(0deg);
+    }
+    
+    #img-div {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    #image {
+        width: 100%;
+        max-width: 1920px;
+        height: auto;
+        margin: auto;
+    }
+
+    #tribute-link {
+        position: absolute;
+        left: -4000px;
+    }
+    
+    #tribute-info {
+        position: absolute;
+        z-index: 100;
+        color: white;
+        width: 40%;
+        font-size: 1.2rem;
+        top: 235px;
+        left: 90px;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: inherit;
+        transition: 200ms;
+    }
+    
+    a:hover {
+        font-size: 1.2em;
+    }
+}

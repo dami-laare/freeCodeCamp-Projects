@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: 300ms;
+}
+a {
+    color: black;
+}
+code {
+    font-size: 1.05rem;
+}
+ #container {
+     display: flex;
+     flex-direction: column;
+     padding: 2rem;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ #navbar {
+     display: flex;
+     flex-direction: column;
+ }
+ #main-doc {
+    display: flex;
+    flex-direction: column;
+}
+#title {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(58, 139, 185);
+}
+
+#link-group {
+     margin: 1rem 0;
+}
+.nav-link {
+    margin: 1rem 0;
+    color: rgb(47, 107, 141);
+
+    font-size: 1.1rem;
+}
+
+.main-section {
+    margin: 1rem 0;
+}
+
+.section-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: rgb(58, 139, 185);
+
+}
+
+@media screen and (min-width:768px) {
+    #container {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 2rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #navbar {
+        position: fixed;
+        left: 0;
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+
+    #link-group {
+        list-style-type: none;
+        margin: 1rem 0;
+        padding-inline-start: 0;
+    }
+
+    #link-group li {
+        margin: 2rem 0;
+    }
+
+    .nav-link {
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+
+    .nav-link:active {
+        text-decoration: underline;
+    }
+
+    #title {
+        margin-bottom: 1rem;
+    }
+    #main-doc {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #navbar {
+        flex-basis: 20%;
+        margin-left: 2rem;
+    }
+    #main-doc {
+        padding: 3rem;
+        flex-basis: 80%;
+    }
+}
